@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 
 
-const urlSchema = new mongoose.Schema(
+const productSchema = new mongoose.Schema(
 
     { 
         title: {type:String, require:true, unique:true,trim:true},
@@ -21,4 +21,4 @@ const urlSchema = new mongoose.Schema(
     {timestamps:true}
 );
 
-module.exports = mongoose.model('Products',urlSchema);
+module.exports = mongoose.model('Products',productSchema);
